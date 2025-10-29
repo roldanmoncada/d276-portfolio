@@ -1,0 +1,6 @@
+img {
+    clip-path: circle(50%);
+    max-width: 100%;
+    width: 20%;
+    height: 20%;
+}
