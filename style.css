@@ -1,6 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: silver;
+}
+
+#hp-desc {
+    display: flex;
+    border: limegreen 2px solid;
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
 img {
     clip-path: circle(50%);
     max-width: 100%;
     width: 20%;
     height: 20%;
+    flex: 0 1 20%;
 }
