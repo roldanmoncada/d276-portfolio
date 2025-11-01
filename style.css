@@ -3,11 +3,15 @@ body {
     margin: 20px;
     padding: 20px;
     background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#hp-desc {
+.hero {
     display: flex;
-    border: limegreen 2px solid;
+    flex: 1 1 100%;
+    border: purple 2px solid;
     padding: 10px;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -16,16 +20,14 @@ body {
 }
 
 #hp-text{
-    max-width: 800px;
-    flex: 0 1 800px;
     justify-content: center;
-    border: limegreen 2px solid;
+    border: magenta 2px solid;
     padding: 10px;
+    flex-flow: column wrap;
 }
 
 h1 {
     text-align: center;
-    display: flex;
     border: limegreen 2px solid;
     padding: 10px;
     justify-content: center;
@@ -38,11 +40,12 @@ img {
     flex: 0 1 20%;
 }
 
-#hp-links {
-    display: block;
-    border: limegreen 2px solid;
+#hp-desc {
+    border: orange 2px solid;
     padding: 10px;
-    font-size: 1.2em;
-    line-height: 1.5em;
     justify-content: center;
+}
+
+.hp-links {
+    border: blue 2px solid;
 }
