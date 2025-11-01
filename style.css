@@ -15,14 +15,34 @@ body {
     justify-content: center;
 }
 
+#hp-text{
+    max-width: 800px;
+    flex: 0 1 800px;
+    justify-content: center;
+    border: limegreen 2px solid;
+    padding: 10px;
+}
+
 h1 {
     text-align: center;
+    display: flex;
+    border: limegreen 2px solid;
+    padding: 10px;
+    justify-content: center;
 }
 
 img {
     clip-path: circle(50%);
     max-width: 100%;
     width: 20%;
-    height: 20%;
     flex: 0 1 20%;
+}
+
+#hp-links {
+    display: block;
+    border: limegreen 2px solid;
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    justify-content: center;
 }
