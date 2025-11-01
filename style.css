@@ -23,7 +23,6 @@ body {
     justify-content: center;
     border: magenta 2px solid;
     padding: 10px;
-    flex-flow: column wrap;
 }
 
 h1 {
@@ -31,6 +30,13 @@ h1 {
     border: limegreen 2px solid;
     padding: 10px;
     justify-content: center;
+}
+
+.pic-text-cont {
+    display: flex;
+    border: red 2px solid;
+    padding: 25px;
+    margin: 25px;
 }
 
 #landing-photo {
@@ -55,6 +61,7 @@ img {
     border: orange 2px solid;
     padding: 10px;
     text-align: center;
+    margin: 25px;;
 }
 
 .hp-links {
