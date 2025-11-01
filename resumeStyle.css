@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-page {
+    display: flex;
+    flex-direction: column;
+    border: purple 2px solid;
+    border-radius: 20px;
+    background: purple;
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 800px;
+}

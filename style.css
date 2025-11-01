@@ -12,6 +12,8 @@ body {
     display: flex;
     flex: 1 1 100%;
     border: purple 2px solid;
+    border-radius: 20px;
+    background: purple;
     padding: 10px;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -23,11 +25,13 @@ body {
     justify-content: center;
     border: magenta 2px solid;
     padding: 10px;
+    background: magenta;
 }
 
 h1 {
     text-align: center;
     border: limegreen 2px solid;
+    background: limegreen;
     padding: 10px;
     justify-content: center;
 }
@@ -35,6 +39,7 @@ h1 {
 .pic-text-cont {
     display: flex;
     border: red 2px solid;
+    background: red;
     padding: 25px;
     margin: 25px;
 }
@@ -59,6 +64,7 @@ img {
 
 #hp-desc {
     border: orange 2px solid;
+    
     padding: 10px;
     text-align: center;
     margin: 25px;;
