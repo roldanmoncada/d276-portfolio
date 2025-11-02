@@ -1,32 +1,58 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     background-color: silver;
+    border: magenta 2px solid;
+    border-radius: 10px;
+    height: 90vh;
 }
 
 header {
     border: red 2px solid;
     margin: 25px;
+    padding: 0 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 15px;
+    padding: 25px;
+    font-size: 2rem;
 }
 
 .nav {
+    display: flex;
     border: orange 2px solid;
-    margin: 25px;
+    margin: 15px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 #main {
     border: blue 2px solid;
     margin: 25px;
-    max-width: fit-page
+    max-width: fit-page;
 }
 
 iframe {
-    display: block;
-    width: 98%;
-    height: 100%;
+    padding-left: 25%;
+    height: 60vh; 
+    width: 100vw;
 }
 
 footer {
