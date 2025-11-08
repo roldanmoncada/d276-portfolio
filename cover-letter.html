@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"></link>
+    <link rel="stylesheet" href="./coverLetterStyle.css"></link>
     <title>Roldan Moncada's Personal Site</title>
 </head>
 
 <body>
-    <p>Placeholder text for cover letter section</p>
+
+  <header>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <h1>Cover Letter</h1>
+    <nav>
+        <ul>
+        <li><a href="landing-page.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="cover-letter.html">Cover Letter</a></li>
+        <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div id="main">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vSRqLlGyOmvyP1aGmLwp8MM29gf8sF08jLODlYZfE9zh6ifeqW6ip_EjfHuqZ3ZSQ/pub?embedded=true"></iframe>
+  </div>
+
+  <footer>Footer</footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuButton.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
 </body>
 
 </html>
