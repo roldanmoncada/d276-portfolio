@@ -10,15 +10,18 @@
 <body>
 
   <header>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
     <h1>Resume</h1>
-    <div class="nav">
+    <nav>
         <ul>
         <li><a href="landing-page.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="cover-letter.html">Cover Letter</a></li>
         <li><a href="career-goals.html">Career Goals</a></li>
         </ul>
-    </div>
+    </nav>
   </header>
 
   <div id="main">
@@ -26,6 +29,15 @@
   </div>
 
   <footer>Footer</footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuButton.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 
 </body>
 
