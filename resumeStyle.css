@@ -16,6 +16,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    position: relative;
 }
 
 .menu-toggle {
@@ -24,6 +26,7 @@ header {
     background: none;
     border: none;
     cursor: pointer;
+    order: -1;
 }
 
 h1 {
@@ -34,6 +37,7 @@ h1 {
 
 nav {
     display: flex;
+    align-items: center;
     border: orange 2px solid;
     margin: 15px;
 }
@@ -44,16 +48,29 @@ nav ul {
     gap: 20px;
     padding: 0;
     margin: 0;
+    align-items: center;
+}
+
+nav li {
+    display: flex;
 }
 
 nav a {
+    display: inline-block;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    border: black 2px solid;
+    border-radius: 6px;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
     background-color: white;
+    transform: translateY(-1.5px);
 }
 
 #main {
@@ -90,33 +107,62 @@ footer {
     }
 
     header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
     }
 
     .menu-toggle {
         display: block;
         color: black;
-        margin-bottom: 10px;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
     nav {
         display: none;
+        position: static;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: black 2px solid;
     }
 
     nav.active {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        display: flex;
     }
 
     nav a {
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: auto;
         padding: 10px;
-        border-top: 1px solid white
+        border: black 2px solid;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background: white;
     }
 
     #main {
@@ -137,14 +183,15 @@ footer {
 }
 
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
-        margin: 5px;
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
     }
-    
+
     header {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav {
@@ -152,23 +199,28 @@ footer {
     }
 
     nav.active {
-        display: block;
+        justify-content: center;
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         gap: 10px;
         margin: 0;
         padding: 0;
     }
 
+    nav a {
+        display: block;
+        justify-content: center;
+        padding: 10px;
+    }
+
     nav a:hover {
-        background-color: #ddd;
+        background: white;
     }
 
     #main {
-        margin: 10px;
-        padding: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
