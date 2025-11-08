@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"></link>
+    <link rel="stylesheet" href="./careerGoalsStyle.css"></link>
     <title>Roldan Moncada's Personal Site</title>
 </head>
 
 <body>
-    <p>Placeholder text for career goals section</p>
+
+  <header>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <h1>Career Goals & About Me</h1>
+    <nav>
+        <ul>
+        <li><a href="landing-page.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="cover-letter.html">Cover Letter</a></li>
+        <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div id="main">
+    
+  </div>
+
+  <footer>Footer</footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuButton.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
 </body>
 
 </html>
