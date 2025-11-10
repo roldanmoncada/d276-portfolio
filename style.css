@@ -11,9 +11,8 @@ body {
 .hero {
     display: flex;
     flex: 1 1 100%;
-    border: purple 2px solid;
-    border-radius: 20px;
-    background: purple;
+    border-radius: 5px;
+    background-color: #7f8c8d;
     padding: 10px;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -23,23 +22,27 @@ body {
 
 #hp-text{
     justify-content: center;
-    border: magenta 2px solid;
     padding: 10px;
-    background: magenta;
+    background-color: #7f8c8d;
+    border-radius: 5px;
 }
 
 h1 {
     text-align: center;
-    border: limegreen 2px solid;
-    background: limegreen;
+    background-color: #bdc3c7;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
     padding: 10px;
     justify-content: center;
 }
 
 .pic-text-cont {
     display: flex;
-    border: red 2px solid;
-    background: red;
+    background-color: #bdc3c7;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
     padding: 25px;
     margin: 25px;
 }
@@ -63,19 +66,39 @@ img {
 }
 
 #hp-desc {
-    border: orange 2px solid;
-    
+    background-color: #bdc3c7;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
     padding: 10px;
     text-align: center;
     margin: 25px;;
 }
 
 .hp-links {
-    border: blue 2px solid;
+    background-color: #bdc3c7;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
 }
 
 ul {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+    background-color: #bdc3c7;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+li:hover {
+    background-color: #ecf0f1;
+    transform: translateY(-1.5px);
 }
