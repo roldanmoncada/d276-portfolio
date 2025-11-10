@@ -154,6 +154,10 @@ nav a:hover {
     box-sizing: border-box;
 }
 
+.exp-one img {
+    margin: 10px;
+}
+
 #footer-link a {
     margin: 0;
     margin-top: 1.25%;
@@ -199,18 +203,12 @@ nav a:hover {
     padding-bottom: 1.25%;
 }
 
-.skills-main, #education-main {
+#about-me-pics {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-self: center;
-    border: #2C3E50 2px solid;
-    box-shadow: 0 0 3px #2C3E50;
-    margin-top: 10px;
-    width: 95%;
-    background-color: #bdc3c7;
-    border-radius: 5px;
-    box-sizing: border-box;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 #partner-pic, #robert-pic, #nora-pic {
