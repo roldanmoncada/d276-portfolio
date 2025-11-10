@@ -223,6 +223,7 @@ nav a:hover {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin: 15px;
 }
 
 #partner-pic, #robert-pic, #nora-pic {
