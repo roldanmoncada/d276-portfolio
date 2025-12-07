@@ -391,7 +391,7 @@ footer #footer-link {
     }
 
     #main {
-        margin: 15px;
+        margin: 0;
         padding: 10px;
         display: flex;
         justify-content: center;
