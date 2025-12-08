@@ -25,6 +25,16 @@
   </header>
 
   <div id="main">
+
+    <div id="date-display">
+      <h2>Today's Date:
+        <span id="date">
+          Loading today's date...
+        </span>
+
+      </h2>
+    </div>
+
     <div id="resume-header">
       <h2>Roldan Moncada</h2>
         <h3 id="prof-exp-header">
@@ -138,6 +148,20 @@
     menuButton.addEventListener('click', () => {
       nav.classList.toggle('active');
     });
+
+    const dateElement = document.getElementById("date")
+    const todaysDate = new Date();
+    console.log(todaysDate);
+
+    const formattedDate = todaysDate.toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    });
+
+    dateElement.textContent = formattedDate;
+
+
   </script>
 
 </body>

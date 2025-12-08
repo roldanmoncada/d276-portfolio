@@ -172,6 +172,21 @@ nav a:hover {
     margin: 10px;
 }
 
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#about-video {
+    width: 50%;
+    height: 50%;
+    border: #2C3E50 2px solid;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
 #footer-link a {
     margin: 0;
     margin-top: 1.25%;
@@ -376,7 +391,7 @@ footer #footer-link {
     }
 
     #main {
-        margin: 15px;
+        margin: 0;
         padding: 10px;
         display: flex;
         justify-content: center;
