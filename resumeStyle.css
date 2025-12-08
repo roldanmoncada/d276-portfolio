@@ -10,6 +10,8 @@ body {
     border-radius: 5px;
 }
 
+
+
 header {
     border: #2C3E50 2px solid;
     box-shadow: 0 0 3px #2C3E50;
@@ -108,6 +110,43 @@ nav a:hover {
 #resume-header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 95%;
+    height: auto;
+    text-align: center;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 1%;
+    background-color: #bdc3c7;
+    box-sizing: border-box;
+}
+
+#skills-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 95%;
+    height: auto;
+    text-align: center;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 2%;
+    background-color: #bdc3c7;
+    box-sizing: border-box;
+}
+
+#date-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-self: center;
