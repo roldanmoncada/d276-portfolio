@@ -335,7 +335,7 @@ img {
     list-style-type: none;
 }
 
-footer {
+.resume-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -352,11 +352,213 @@ footer {
     box-sizing: border-box;
 }
 
-footer #resume-footer-link {
+#resume-footer-link {
     padding-bottom: 1.5%;
     margin-bottom: 1.5%;
 }
 
+/*Cover Letter Style */
+
+.cover-letter-body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    background-color: #2C3E50;
+    /*border: magenta 2px solid; 
+    another example of using a border to help me visualize.*/
+    min-height: 100vh;
+    border-radius: 5px;
+}
+
+.cover-letter-header-top {
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1.25%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    background-color: #7f8c8d;
+    border-radius: 5px;
+}
+
+.cover-letter-menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    order: -1;
+}
+
+.cover-letter-header-top h1 {
+    margin: 0;
+    padding: 2.5%;
+    font-size: 2rem;
+}
+
+.cover-letter-nav {
+    display: flex;
+    align-items: center;
+     /*border: orange 2px solid; 
+        ^^^this is how I helped myself learn how to target specific elements. 
+           I put a different color border around every individual element so I could 
+           manipulate it as I needed and would see if my code impacted other elements and how.
+     */
+    margin: 15px;
+}
+
+.cover-letter-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.cover-letter-nav li {
+    display: flex;
+    background-color: #bdc3c7;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
+}
+
+.cover-letter-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cover-letter-nav a:hover {
+    background-color: #ecf0f1;
+    transform: translateY(-1.5px);
+}
+
+#cover-letter-main{
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-bottom: 1.5%;
+    align-items: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    box-sizing: border-box;
+    background-color: #7f8c8d;
+}
+
+#cover-letter-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 95%;
+    height: auto;
+    text-align: center;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 2%;
+    background-color: #bdc3c7;
+    box-sizing: border-box;
+}
+
+#cover-letter-header h2 {
+    margin: 5px;
+    padding-top: 1.25%;
+    text-align: center;
+    width: 95%;
+}
+
+#cover-letter-header h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5px 0;
+    text-decoration: underline;
+    font-size: 1.35rem;
+    padding: 1.25%;
+}
+
+.letter-container, #footer-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    margin-top: 10px;
+    width: 95%;
+    background-color: #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#footer-link a {
+    margin: 0;
+    margin-top: 1.25%;
+    padding: 1.25%;
+}
+
+.letter-container ul {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px;
+    padding: 5px 10px;
+}
+
+.letter-container p {
+    margin: 5px 15px;
+}
+
+.letter-topic {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+
+.cover-letter-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    background: #7f8c8d;
+    border: #2C3E50 2px solid;
+    box-shadow: 0 0 3px #2C3E50;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#footer-link {
+    padding-bottom: 1.5%;
+    margin-bottom: 1.5%;
+}
 
 
 @media (max-width: 900px) {
@@ -453,6 +655,79 @@ footer #resume-footer-link {
         flex-direction: column;
     }
 
+    /*Cover Letter Style */
+
+    .cover-letter-body {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .cover-letter-header-top {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .cover-letter-menu-toggle {
+        display: block;
+        color: black;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .cover-letter-nav {
+        display: none;
+        position: static;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cover-letter-nav.active {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .cover-letter-nav ul {
+        flex-direction: row;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cover-letter-nav li {
+        display: flex;
+    }
+
+    .cover-letter-nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        padding: 10px;
+        border: black 2px solid;
+        border-radius: 5px;
+    }
+
+    .cover-letter-nav a:hover {
+        background: white;
+    }
+
+    #cover-letter-main {
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
 }
 
@@ -525,7 +800,70 @@ footer #resume-footer-link {
         align-items: center;
     }
 
-    footer {
+    .resume-footer {
+        font-size: 0.8rem;
+        margin: 10px;
+    }
+
+    /*Cover Letter Style */
+    .cover-letter-header-top h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .cover-letter-header-top {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .cover-letter-nav {
+        display: none;
+        position: static;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cover-letter-nav.active {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .cover-letter-nav ul {
+        flex-direction: row;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cover-letter-nav a {
+        display: block;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .cover-letter-nav a:hover {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        padding: 10px;
+        border: #2C3E50 2px solid;
+        box-shadow: 0 0 3px #2C3E50;
+        border-radius: 5px;
+    }
+
+    #cover-letter-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cover-letter-footer {
         font-size: 0.8rem;
         margin: 10px;
     }
