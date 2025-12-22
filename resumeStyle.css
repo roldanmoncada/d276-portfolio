@@ -1,4 +1,4 @@
-body {
+.resume-body {
     font-family: Arial, sans-serif;
     margin: 10px;
     padding: 20px;
@@ -12,7 +12,7 @@ body {
 
 
 
-header {
+.resume-header {
     border: #2C3E50 2px solid;
     box-shadow: 0 0 3px #2C3E50;
     max-width: 100%;
@@ -30,7 +30,7 @@ header {
     border-radius: 5px;
 }
 
-.menu-toggle {
+.resume-menu-toggle {
     display: none;
     font-size: 2rem;
     background: none;
@@ -39,13 +39,13 @@ header {
     order: -1;
 }
 
-h1 {
+#resume-title {
     margin: 0;
     padding: 2.5%;
     font-size: 2rem;
 }
 
-nav {
+.resume-nav {
     display: flex;
     align-items: center;
      /*border: orange 2px solid; 
@@ -56,7 +56,7 @@ nav {
     margin: 15px;
 }
 
-nav ul {
+.resume-nav ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
@@ -65,7 +65,7 @@ nav ul {
     align-items: center;
 }
 
-nav li {
+.resume-nav li {
     display: flex;
     background-color: #bdc3c7;
     border: #2C3E50 2px solid;
@@ -73,7 +73,7 @@ nav li {
     border-radius: 5px;
 }
 
-nav a {
+.resume-nav a {
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -87,12 +87,12 @@ nav a {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav a:hover {
+.resume-nav a:hover {
     background-color: #ecf0f1;
     transform: translateY(-1.5px);
 }
 
-#main{
+#resume-main{
     border: #2C3E50 2px solid;
     box-shadow: 0 0 3px #2C3E50;
     border-radius: 5px;
@@ -179,7 +179,7 @@ nav a:hover {
     padding: 1.25%;
 }
 
-.exp-one, .skills-main, #footer-link {
+.exp-one, #footer-link {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,33 +238,6 @@ nav a:hover {
     padding-bottom: 1.25%;
 }
 
-.skills-main, #education-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    border: #2C3E50 2px solid;
-    box-shadow: 0 0 3px #2C3E50;
-    margin-top: 10px;
-    width: 95%;
-    background-color: #bdc3c7;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.skills-main li {
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 5px 15px;
-}
-
-.skills-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 5px 0;
-    padding: 5px 10px;
-}
 
 #edu-title {
     list-style-type: none;
@@ -293,19 +266,29 @@ footer #footer-link {
 }
 
 @media (max-width: 900px) {
-    body {
+    .resume-header {
+        justify-content: flex-start;
+    }
+    
+    #resume-title {
+        font-size: 2rem;
+        text-align: left;
+        justify-self: left;
+    }
+
+    .resume-body {
         padding: 10px;
         margin: 5px;
     }
 
-    header {
+    .resume-body {
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         gap: 1rem;
     }
 
-    .menu-toggle {
+    .resume-menu-toggle {
         display: block;
         color: black;
         font-size: 2rem;
@@ -314,7 +297,7 @@ footer #footer-link {
         cursor: pointer;
     }
 
-    nav {
+    .resume-nav {
         display: none;
         position: static;
         background: none;
@@ -324,24 +307,24 @@ footer #footer-link {
         width: 100%;
     }
 
-    nav.active {
+    .resume-nav.active {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
     }
 
-    nav ul {
+   .resume-nav ul {
         flex-direction: row;
         gap: 10px;
         padding: 0;
         margin: 0;
     }
 
-    nav li {
+    .resume-nav li {
         display: flex;
     }
 
-    nav a {
+    .resume-nav a {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -352,11 +335,11 @@ footer #footer-link {
         border-radius: 5px;
     }
 
-    nav a:hover {
+    .resume-nav a:hover {
         background: white;
     }
 
-    #main {
+    #resume-main {
         margin: 0;
         padding: 10px;
         display: flex;
@@ -370,17 +353,17 @@ footer #footer-link {
 
 @media (max-width: 600px) {
 
-    h1 {
+    #resume-title {
         font-size: 2rem;
         text-align: center;
     }
 
-    header {
+    #resume-header {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    nav {
+    .resume-nav {
         display: none;
         position: static;
         background: none;
@@ -390,26 +373,26 @@ footer #footer-link {
         width: 100%;
     }
 
-    nav.active {
+    .resume-nav.active {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
     }
 
-    nav ul {
+    .resume-nav ul {
         flex-direction: row;
         gap: 10px;
         margin: 0;
         padding: 0;
     }
 
-    nav a {
+    .resume-nav a {
         display: block;
         justify-content: center;
         padding: 10px;
     }
 
-    nav a:hover {
+    .resume-nav a:hover {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -421,7 +404,7 @@ footer #footer-link {
         border-radius: 5px;
     }
 
-    #main {
+    #resume-main {
         display: flex;
         justify-content: center;
         align-items: center;

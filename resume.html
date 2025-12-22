@@ -7,14 +7,14 @@
     <title>Roldan Moncada's Personal Site</title>
 </head>
 
-<body>
+<body class="resume-body">
 
-  <header>
-    <button class="menu-toggle" aria-label="Toggle navigation">
+  <header class="resume-header">
+    <button class="resume-menu-toggle" aria-label="Toggle navigation">
       ☰
     </button>
-    <h1>Resume</h1>
-    <nav>
+    <h1 id="resume-title">Resume</h1>
+    <nav class="resume-nav">
         <ul>
         <li><a href="landing-page.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
@@ -24,7 +24,7 @@
     </nav>
   </header>
 
-  <div id="main">
+  <div id="resume-main">
 
     <div id="date-display">
       <h2>Today's Date:
@@ -142,8 +142,8 @@
   </footer>
 
   <script>
-    const menuButton = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
+    const menuButton = document.querySelector('.resume-menu-toggle');
+    const nav = document.querySelector('.resume-nav');
 
     menuButton.addEventListener('click', () => {
       nav.classList.toggle('active');
