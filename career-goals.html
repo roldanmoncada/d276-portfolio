@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./careerGoalsStyle.css"></link>
+    <link rel="stylesheet" href="./style.css"></link>
     <title>Roldan Moncada's Personal Site</title>
 </head>
 
-<body>
+<body class="cg-body">
 
-  <header>
-    <button class="menu-toggle" aria-label="Toggle navigation">
+  <header class="cg-header-top">
+    <button class="cg-menu-toggle" aria-label="Toggle navigation">
       ☰
     </button>
     <h1>Career Goals & About Me</h1>
-    <nav>
+    <nav class="cg-nav">
         <ul>
         <li><a href="landing-page.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
@@ -24,10 +24,10 @@
     </nav>
   </header>
 
-  <div id="main">
+  <div id="cg-main">
 
-    <div id="resume-header">
-        <h3 id="prof-exp-header">
+    <div id="cg-title-box">
+        <h3 id="cg-section-title-container">
             Some music, if you'd care before proceeding:
         </h3>
         <p>
@@ -38,49 +38,49 @@
         </p>
     </div>
 
-    <div id="resume-header">
+    <div id="cg-title-box">
       <h2>Roldan Moncada</h2>
-        <h3 id="prof-exp-header">
+        <h3 id="cg-section-title-container">
             Career Goals
         </h3>
     </div>
-    <section class="exp-one">
-        <h4 class="prof-exp-title">My primary goal is to complete this program within five years.</h4>
-        <h4 class="prof-exp-title">Secondarily, I want to become a software developer at an enterprise-level company.</h4>
-        <h4 class="prof-exp-title"> My long-term goal is to become experienced and skilled enough to be able to create my own business.</h4>
-      <p class="prof-exp-title">None of these goals can become reality without first completing this bachelors-to-masters program. Prior to becoming a professional, I aim to take an internship position during or shortly after the final year of the bachelor's portion. My partner graduates from medical school in May of 2027, so I do not believe I will be in Salt Lake City at that point. This is to take place wherever we end up. After this internship and during the beginning of the master's portion of the program, my plan is to either be hired at the company in which I interned, or elsewhere. Ideally the location I am first employed at will be where I acquire my first four or five years of experience as a devloper.
+    <main class="cg-exp-one">
+        <h4 class="cg-content-text-element">My primary goal is to complete this program within five years.</h4>
+        <h4 class="cg-content-text-element">Secondarily, I want to become a software developer at an enterprise-level company.</h4>
+        <h4 class="cg-content-text-element"> My long-term goal is to become experienced and skilled enough to be able to create my own business.</h4>
+      <p class="cg-content-text-element">None of these goals can become reality without first completing this bachelors-to-masters program. Prior to becoming a professional, I aim to take an internship position during or shortly after the final year of the bachelor's portion. My partner graduates from medical school in May of 2027, so I do not believe I will be in Salt Lake City at that point. This is to take place wherever we end up. After this internship and during the beginning of the master's portion of the program, my plan is to either be hired at the company in which I interned, or elsewhere. Ideally the location I am first employed at will be where I acquire my first four or five years of experience as a devloper.
       </p>
       
-      <p class="prof-exp-title"> At this benchmark, I will evaluate my situation and consider the possibility of creating my own business. If my experience is not enough for such an undertaking or if my company is providing an acceptable amount of upward mobility, I will either stay at the same company or move to another to challenge myself and develop further, professionally.
+      <p class="cg-content-text-element"> At this benchmark, I will evaluate my situation and consider the possibility of creating my own business. If my experience is not enough for such an undertaking or if my company is providing an acceptable amount of upward mobility, I will either stay at the same company or move to another to challenge myself and develop further, professionally.
         During this chunk of time I also want to be bolstering my personal portfolio, doing freelance work for extra hands-on experience, and perhaps even being a leader in my company or community.
       </p>
 
-      <p class="prof-exp-title"> 
+      <p class="cg-content-text-element"> 
         Once I am finally qualified to create and run my own business, I will do so on my own or with a business partner or two. As years go by, I aim to scale locally before then expanding my scope to offer my services to nearby states. The long-, long-term goal is to be able to hire out management of the company so I can come and go as I please so that I can pursue philanthropic efforts. All of that, though, cannot be achieved without first paying my dues during my tenure at WGU.
       </p>
-    </section>
+    </main>
 
-    <div id="resume-header">
-        <h3 id="prof-exp-header">
+    <div id="cg-title-box">
+        <h3 id="cg-section-title-container">
             About Me
         </h3>
     </div>
 
-    <section class="exp-one">
+    <section class="cg-exp-one">
     <div id="about-me-pics">
       <img id="partner-pic" src="./assets/IMG_5912.JPG" alt="Roldan and his partner, Laura.">
       <img id="robert-pic" src="./assets/IMG_6729.JPG" alt="Roldan's corgi, Robert.">
       <img id="nora-pic" src="./assets/IMG_9541.jpg" alt="Roldan's Great Pyrenees, Nora.">
     </div>
-    <p class="prof-exp-title"> 
+    <p class="cg-content-text-element"> 
         In my personal life, I enjoy spending time with my partner, Laura, and our two dogs.
         We live in downtown Salt Lake City have lived in town for just over 4 years. Robert came with us from our hometown of Iowa City, IA while Nora joined us just over a year into living in SLC. We've taken up snowboarding, hiking, and camping to make the most of our time in Utah!
       </p>
     
     </section>
 
-    <section class="exp-one">
-      <p class="prof-exp-title"> Here is a video of my dearest Robert about 7 years ago that I love to this day.
+    <section class="cg-exp-one">
+      <p class="cg-content-text-element"> Here is a video of my dearest Robert about 7 years ago that I love to this day.
         He would always greet me when I came home from work by staring through our fence and wagging his tail like crazy.
       </p>
       <div class="video-wrapper">
@@ -91,32 +91,37 @@
       </div>
     </section>
 
-    <section class="exp-one">
-      <h4 class="prof-exp-title">Contact Me:</h4>
+    <section class="cg-exp-one">
+      <h4 class="cg-content-text-element">Contact Me:</h4>
       <form action="https://wp.zybooks.com/form-viewer.php" method="POST" enctype="multipart/form-data">
         <p>
-        <label for="first">First Name:</label>
-        <input type="text" name="first" id="first">
-        </p>
-        
-        <p>
-        <label for="last">Last Name:</label>
-        <input type="text" name="last" id="last">
+          <label for="first">Company Name:</label>
+          <input type="text" name="first" id="first">
         </p>
 
         <p>
-        <label for="email">Email Address:</label>
-        <input type="email" name="email" id="email">
+          <label for="first">First Name:</label>
+          <input type="text" name="first" id="first">
         </p>
         
         <p>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" name="phone" id="phone">
+          <label for="last">Last Name:</label>
+          <input type="text" name="last" id="last">
         </p>
 
         <p>
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" rows="10" cols="50">Enter your message here.</textarea>
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" id="email">
+        </p>
+        
+        <p>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" id="phone">
+        </p>
+
+        <p>
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" rows="10" cols="50">Enter your message here.</textarea>
         </p>
 
         <p>What is the best time to contact you?</p>
@@ -136,20 +141,13 @@
         </div>
 
         <p>What is your preferred method of contact?</p>
-        <div>
-          <input type="radio" name="phone" value="Phone call" id="phone">
-          <label for="phone">Phone call</label>
-        </div>
+        <select name="contact-preference">
+          <option value="Phone call" id="phone">Phone Call</option>
+        
+          <option  value="Email" id="email">Email</option>
 
-        <div>
-          <input type="radio" name="email" value="Email" id="email">
-          <label for="email">Email</label>
-        </div>
-
-        <div>
-          <input type="radio" name="text" value="Text message" id="text">
-          <label for="text">Text message</label>
-        </div>
+          <option value="Text message" id="text">Text Message</option>
+        </select>
 
         <input type="submit" value="Submit"></input>
         
@@ -163,8 +161,8 @@
   </footer>
 
   <script>
-    const menuButton = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
+    const menuButton = document.querySelector('.cg-menu-toggle');
+    const nav = document.querySelector('.cg-nav');
 
     menuButton.addEventListener('click', () => {
       nav.classList.toggle('active');

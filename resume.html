@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resumeStyle.css"></link>
+    <link rel="stylesheet" href="./style.css"></link>
     <title>Roldan Moncada's Personal Site</title>
 </head>
 
-<body>
+<body class="resume-body">
 
-  <header>
-    <button class="menu-toggle" aria-label="Toggle navigation">
+  <header class="resume-header">
+    <button class="resume-menu-toggle" aria-label="Toggle navigation">
       ☰
     </button>
-    <h1>Resume</h1>
-    <nav>
+    <h1 id="resume-title">Resume</h1>
+    <nav class="resume-nav">
         <ul>
         <li><a href="landing-page.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
@@ -24,10 +24,11 @@
     </nav>
   </header>
 
-  <div id="main">
+  <main id="resume-main">
 
     <div id="date-display">
       <h2>Today's Date:
+        <hr />
         <span id="date">
           Loading today's date...
         </span>
@@ -35,13 +36,13 @@
       </h2>
     </div>
 
-    <div id="resume-header">
+    <section id="resume-header">
       <h2>Roldan Moncada</h2>
         <h3 id="prof-exp-header">
             Professional Experience
         </h3>
-    </div>
-    <section class="exp-one">
+    </section>
+    <article class="exp-one">
         <h4 class="prof-exp-title">Grants and Contracts Officer II | University of Utah School of Medicine (UUSOM) | Remote | July 2023 - Present</h4>
         <ul>
           <li>Provide extensive pre-award administrative support to Investigators in the pursuit of varied funding opportunities. Services include comprehensive full and sub contract guidance, new process onboarding and training, on-demand support, etc.</li>
@@ -50,9 +51,9 @@
           <li>Implemented feedback mechanisms - distributing surveys, inquiring individually via email, zoom meetings before/after proposal submissions - to proactively ensure satisfaction of all stakeholders.</li>
           <li>Maintained precise documentation, ensuring systematic organization and accessibility. Incorporate scientific and research-related details for enhanced precision and relevance in all project documentation.</li>
         </ul>
-    </section>
+    </article>
 
-    <section class="exp-one">
+    <article class="exp-one">
       <h4 class="prof-exp-title">Talent Representative | Kforce, Inc. | Remote | April 2022 - July 2023</h4>
       <ul>
         <li>Proactively sourced a minimum of 100 qualified candidates per week through diverse channels, such as LinkedIn Recruiter, Dice, Kforce’s internal database, networking, and referrals, resulting in a consistent talent pipeline.</li>
@@ -62,9 +63,9 @@
         <li>Created a best-practices manual to promote systematic organization and accessibility for precise documentation. Incorporated NIH policies for all grant mechanisms as well as the most frequently used foundations.</li>
         <li>Nurtured existing client relationships by proactively and continuously interfacing with key stakeholders to ensure that Kforce and our services were known, understood, and leveraged as necessary.</li>
       </ul>
-    </section>
+    </article>
 
-    <section class="exp-one">
+    <article class="exp-one">
       <h4 class="prof-exp-title">Lead Nurse Recruiter | Maxim Healthcare Group | Salt Lake City, UT | November 2021 - April 2022</h4>
       <ul>
         <li>Fostered trust and rapport with candidates, nurses, and patient families through effective communication and personalized support</li>
@@ -74,9 +75,9 @@
         <li>Digitized existing documentation systems and policy archives. Created new processes – online nurse scheduling via Google Calendar, trainings via Google Slides, checklists via Google Sheets – leading to reduced scheduling errors and increased family satisfaction.</li>
         <li>Leveraged LinkedIn Recruiter, Indeed, RecruitCare, MyUnity, TextUs, Canva, Webex, Outlook, and Maxim’s internal database.</li>
       </ul>
-    </section>
+    </article>
 
-    <section class="exp-one">
+    <article class="exp-one">
       <h4 class="prof-exp-title">Nursing Assistant (NA) | University of Iowa Hospitals & Clinics | Iowa City, IA | October 2020 - August 2021</h4>
       <ul>
         <li>Provided bedside care of 16-20 acute care patients that included recording patient vitals, glucose levels, and fluid samples in EPIC; performing patient hygiene; emptying drains and catheters; providing ad-hoc physical therapy; other tasks as necessary.</li>
@@ -84,66 +85,91 @@
         <li>Enhanced/created communication processes to cultivate strong relationships between Investigators, Project Teams, and Research Administration entities; reducing response time for inquiries and requests by 50%.</li>
         <li>Elected to leadership in two NA-centric organizations to represent our floor in monthly meetings, develop new skills to share with fellow NAs, foster collaboration between divisions, and ensure compliance with new healthcare policies.</li>
       </ul>
-    </section>
+    </article>
 
       <h3 id="skills-header"> <br>
         Applicable Skills
+        <hr />
       </h3>
 
-    <section class="exp-one">
+    <article class="exp-one">
       <h4 class="prof-exp-title">Documentation: </h4>
       <ul>
         <li>Microsoft Office Suite, Google Suite, EPIC, Asana, MS Dynamics, Applicant Tracking Systems (ATS), eProposal Documentation System, Cayuse federal grant application system, University of Utah internal systems - eAward, Report Management, Chartfield, Grants Tracking Database, CIS.</li>
       </ul>
-    </section>
+    </article>
 
-    <section class="exp-one">
+    <article class="exp-one">
       <h4 class="prof-exp-title">Languages: </h4>
       <ul>
         <li>Native Spanish speaker, native English speaker.</li>
       </ul>
-    </section>
+    </article>
 
-    <section class="exp-one">
+    <article class="exp-one">
       <h4 class="prof-exp-title">Technical Stack: </h4>
       <ul>
         <li>Bootstrap, Express.js, Git, Github, Heroku, HTML5/CSS3, JavaScript, JQuery, MongoDB, MySQL, Node.js, React.</li>
       </ul>
-    </section>
+    </article>
       
-    <section class="exp-one">
+    <article class="exp-one">
       <h4 class="prof-exp-title">Technical Proficiencies: </h4>
       <ul>
         <li>SEO, Responsive Design, API/JSON, RESTful API, State Management, Command Line, Database Theory, Agile Methodologies, Quality Assurance Testing, Social Coding Best Practices, Computer Science Fundamentals.</li>
       </ul>
-    </section>
+    </article>
       
-    <section class="exp-one">
-      <h4 class="prof-exp-title">Leadership: </h4>
-      <ul>  
-        <li><em><b>UIHC</b></em> - Shared Governance Member, Partners in Practice Leader, Safe Patient Handling Leader.</li>
-        <li><em><b>Maxim Healthcare Group</b></em> - Diversity and Inclusion Committee.</li>
-        <li><em><b>Kforce</b></em> - New Hire Welcome Lead, Diversity and Inclusion Team, Employee Feedback Liaison.</li>
-        <li><em><b>UUSOM</b></em> - Wellness Champions Leader, Faculty Outreach Leader, Administrative Captain, Grant Tracking Database Manager.</li>
-      </ul>
-    </section>
+    <article class="exp-one">
+      <table>  
+        <caption class="prof-exp-title"><em><b>Leadership: </b></em></caption>
+        <tr>
+          <th><b>UIHC</b></th>
+          <th><b>Maxim Healthcare Group</b></th>
+          <th><b>Kforce</b></th>
+          <th><b>UUSOM</b></th>
+        </tr>  
+
+        <tr>
+          <td>Shared Governance Member </td>
+          <td>Diversity and Inclusion Committee </td>
+          <td>New Hire Welcome Lead </td>
+          <td>Wellness Champions Leader </td>
+        </tr>
+
+        <tr>
+          <td>Partners in Practice Leader </td>
+          <td>New Hire Orientation Leader </td>
+          <td>Diversity and Inclusion Team Leader </td>
+          <td>Administrative Captain </td>
+        </tr>
+
+        <tr>
+          <td>Safe Patient Handling Leader </td>
+          <td>Administrative Efficiency Leader </td>
+          <td>Employee Feedback Liaison </td>
+          <td>Grant Tracking Database Manager </td>
+        </tr>
+      </table>
+    </article>
       
-    <section class="exp-one">
+    <article class="exp-one">
       <h3 class="prof-exp-title">Education</h3>
       <ul>
         <li id="edu-title"><strong>University of Iowa </strong><br> Bachelor of Arts in Enterprise Leadership | Iowa City, IA | Fall 2017</li>
         <li id="edu-title"><strong>University of Utah Bootcamp </strong><br> Full Stack Software Engineer | Salt Lake City, UT | Spring 2023</li>
-      </ul></section>
+      </ul>
+    </article>
 
-    </div>
+  </main>
 
-  <footer>
-    <p id="footer-link"><a href="https://docs.google.com/document/d/1o5fOfLbx59Lsmyfj8noTKoR544pcD7op/edit?usp=sharing&ouid=105857934290752960099&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Click here </a>to download my full resume from Google Drive!</p>
+  <footer class="resume-footer">
+    <p id="resume-footer-link"><a href="https://docs.google.com/document/d/1o5fOfLbx59Lsmyfj8noTKoR544pcD7op/edit?usp=sharing&ouid=105857934290752960099&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Click here </a>to download my full resume from Google Drive!</p>
   </footer>
 
   <script>
-    const menuButton = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
+    const menuButton = document.querySelector('.resume-menu-toggle');
+    const nav = document.querySelector('.resume-nav');
 
     menuButton.addEventListener('click', () => {
       nav.classList.toggle('active');
