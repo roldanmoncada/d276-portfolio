@@ -317,15 +317,16 @@ hr {
     padding: 1.25%;
 }
 
-.exp-one ul {
-    display: flex;
-    flex-direction: column;
+
+.exp-one tr {
     margin: 5px 15px;
     padding: 5px 10px;
+    border: #2C3E50 2px solid;
 }
 
-.exp-one li {
+.exp-one td {
     margin: 5px 15px;
+    padding: 5px 10px;
 }
 
 .prof-exp-title {
