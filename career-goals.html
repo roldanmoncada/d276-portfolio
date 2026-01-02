@@ -44,7 +44,7 @@
             Career Goals
         </h3>
     </div>
-    <section class="cg-exp-one">
+    <main class="cg-exp-one">
         <h4 class="cg-content-text-element">My primary goal is to complete this program within five years.</h4>
         <h4 class="cg-content-text-element">Secondarily, I want to become a software developer at an enterprise-level company.</h4>
         <h4 class="cg-content-text-element"> My long-term goal is to become experienced and skilled enough to be able to create my own business.</h4>
@@ -58,7 +58,7 @@
       <p class="cg-content-text-element"> 
         Once I am finally qualified to create and run my own business, I will do so on my own or with a business partner or two. As years go by, I aim to scale locally before then expanding my scope to offer my services to nearby states. The long-, long-term goal is to be able to hire out management of the company so I can come and go as I please so that I can pursue philanthropic efforts. All of that, though, cannot be achieved without first paying my dues during my tenure at WGU.
       </p>
-    </section>
+    </main>
 
     <div id="cg-title-box">
         <h3 id="cg-section-title-container">
@@ -95,28 +95,33 @@
       <h4 class="cg-content-text-element">Contact Me:</h4>
       <form action="https://wp.zybooks.com/form-viewer.php" method="POST" enctype="multipart/form-data">
         <p>
-        <label for="first">First Name:</label>
-        <input type="text" name="first" id="first">
-        </p>
-        
-        <p>
-        <label for="last">Last Name:</label>
-        <input type="text" name="last" id="last">
+          <label for="first">Company Name:</label>
+          <input type="text" name="first" id="first">
         </p>
 
         <p>
-        <label for="email">Email Address:</label>
-        <input type="email" name="email" id="email">
+          <label for="first">First Name:</label>
+          <input type="text" name="first" id="first">
         </p>
         
         <p>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" name="phone" id="phone">
+          <label for="last">Last Name:</label>
+          <input type="text" name="last" id="last">
         </p>
 
         <p>
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" rows="10" cols="50">Enter your message here.</textarea>
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" id="email">
+        </p>
+        
+        <p>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" id="phone">
+        </p>
+
+        <p>
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" rows="10" cols="50">Enter your message here.</textarea>
         </p>
 
         <p>What is the best time to contact you?</p>
@@ -136,20 +141,13 @@
         </div>
 
         <p>What is your preferred method of contact?</p>
-        <div>
-          <input type="radio" name="phone" value="Phone call" id="phone">
-          <label for="phone">Phone call</label>
-        </div>
+        <select name="contact-preference">
+          <option value="Phone call" id="phone">Phone Call</option>
+        
+          <option  value="Email" id="email">Email</option>
 
-        <div>
-          <input type="radio" name="email" value="Email" id="email">
-          <label for="email">Email</label>
-        </div>
-
-        <div>
-          <input type="radio" name="text" value="Text message" id="text">
-          <label for="text">Text message</label>
-        </div>
+          <option value="Text message" id="text">Text Message</option>
+        </select>
 
         <input type="submit" value="Submit"></input>
         
