@@ -276,6 +276,10 @@ img {
     box-sizing: border-box;
 }
 
+hr {
+    border: none;
+}
+
 #resume-header h2 {
     margin: 5px;
     padding-top: 1.25%;
