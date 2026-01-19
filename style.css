@@ -1,3 +1,8 @@
+/* Universal Style */
+* {
+    font-family: "Times-New-Roman", sans-serif;
+}
+
 /* Landing Page Style */
 
 .landing-body {
